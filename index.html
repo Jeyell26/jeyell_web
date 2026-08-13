@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Louise Bungay — Software Engineer (IoT, Cloud & AI Systems)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glow Background Effects -->
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">John Louise<span>.dev</span></a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Tech Stack</a>
+        <a href="#education">Education</a>
+        <a href="https://github.com/Jeyell26" target="_blank" rel="noopener" class="btn-github">GitHub Profile ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="badge">💻 Software Engineer — IoT, Cloud & AI Systems</div>
+      <h1 class="hero-title">John Louise G. <span class="gradient-text">Bungay</span></h1>
+      <p class="hero-subtitle">Specializing in Go microservices, AWS event-driven infrastructure (<code>sts:AssumeRole</code>), multi-tenant IoT scaling, and agentic AI workflows.</p>
+      
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Featured Projects</a>
+        <a href="https://www.linkedin.com/in/jeyellbungay/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn Profile ↗</a>
+        <a href="mailto:bungay.jlg@gmail.com" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Featured Projects Showcase -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-tag">STAR PROJECTS</span>
+        <h2>Featured Engineering Builds</h2>
+        <p>Production-ready applications demonstrating cloud security, high-scale traffic handling, and serverless architectures.</p>
+      </div>
+
+      <!-- Project 1: LogPulse -->
+      <div class="featured-card" style="margin-bottom: 3rem;">
+        <div class="card-badge">PRODUCTION AWS & DEMO</div>
+        <div class="featured-grid">
+          <div class="featured-info">
+            <h3 class="featured-title">LogPulse — Multi-Tenant AWS CloudWatch SaaS</h3>
+            <p class="featured-description">
+              An enterprise-grade log management SaaS implementing <strong>AWS Cross-Account IAM Role Assumption (<code>sts:AssumeRole</code>)</strong> with ExternalID validation. Eliminates static AWS credentials by utilizing 1-hour auto-expiring temporary STS tokens (Datadog & Grafana Cloud security pattern).
+            </p>
+
+            <div class="tech-tags">
+              <span class="tag">Go 1.24</span>
+              <span class="tag">AWS STS AssumeRole</span>
+              <span class="tag">CloudWatch Live Tail</span>
+              <span class="tag">React 19</span>
+              <span class="tag">Python 3.12 SAM</span>
+              <span class="tag">CloudFormation</span>
+              <span class="tag">Nginx Rate-Limiting</span>
+            </div>
+
+            <div class="featured-links">
+              <a href="https://jeyell26.github.io/CloudCompanion/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">🌐 Interactive Demo (GitHub Pages)</a>
+              <a href="http://3.89.224.215" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🚀 Live AWS EC2 App</a>
+              <a href="https://github.com/Jeyell26/CloudCompanion" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">📄 GitHub Repo</a>
+            </div>
+          </div>
+
+          <div class="featured-highlights">
+            <h4>Architecture Highlights</h4>
+            <ul class="highlight-list">
+              <li><strong>🔒 Zero Static Key Storage:</strong> Temporary STS sessions with 1-hour expiration and ExternalID validation.</li>
+              <li><strong>⚡ Real-Time Log Streaming:</strong> CloudWatch <code>StartLiveTail</code> SSE stream with relative reverse proxy routing.</li>
+              <li><strong>🛡️ Dual-Mode Pipeline:</strong> CloudFormation + Makefile on AWS EC2 alongside GitHub Actions CI/CD for zero-cost GitHub Pages hosting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: DLSU CSO Tracker -->
+      <div class="featured-card" style="margin-bottom: 3rem;">
+        <div class="card-badge">HIGH-SCALE PLATFORM</div>
+        <div class="featured-grid">
+          <div class="featured-info">
+            <h3 class="featured-title">DLSU CSO Class Slot Tracker & Platform</h3>
+            <p class="featured-description">
+              High-throughput class registration and slot tracking web application built for De La Salle University student body. Handled extreme traffic surges during course registration periods.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Contentful</span>
+              <span class="tag">Node.js</span>
+            </div>
+          </div>
+
+          <div class="featured-highlights">
+            <h4>Impact & Achievements</h4>
+            <ul class="highlight-list">
+              <li><strong>📈 Peak Traffic Impact:</strong> Maintained 100% platform uptime during extreme registration traffic surges peaking at <strong>45.71k unique site visits in a single day</strong>.</li>
+              <li><strong>👥 Leadership:</strong> Led technical team of 6 web developers alongside organization heads to govern code quality and MongoDB database management.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: tiny SAM Generator -->
+      <div class="featured-card">
+        <div class="card-badge">AWS SERVERLESS IAC</div>
+        <div class="featured-grid">
+          <div class="featured-info">
+            <h3 class="featured-title"><code>tiny/</code> — Serverless Live Log Generator Microservice</h3>
+            <p class="featured-description">
+              Infrastructure-as-Code (IaC) microservice built to dynamically generate and ingest real-time log event streams into CloudWatch Log Groups for live tail benchmarking.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tag">Python 3.12</span>
+              <span class="tag">AWS SAM</span>
+              <span class="tag">API Gateway (SigV4)</span>
+              <span class="tag">Lambda</span>
+              <span class="tag">S3 Presigned URLs</span>
+            </div>
+          </div>
+
+          <div class="featured-highlights">
+            <h4>Architecture Highlights</h4>
+            <ul class="highlight-list">
+              <li><strong>🔑 S3 Presigned URL Uploads:</strong> Decoupled configuration updates from Lambda code deployments using S3 presigned URLs.</li>
+              <li><strong>⏱️ Auto-Expiration & Guardrails:</strong> Configured 14-minute max duration execution caps and 24-hour log retention policies to enforce $0.00 AWS Free Tier usage.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Work Experience Timeline -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <span class="section-tag">CAREER HISTORY</span>
+        <h2>Work Experience</h2>
+      </div>
+
+      <div class="experience-timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Sercomm — <span>Software Engineer (Internet of Things)</span></h3>
+              <p class="timeline-meta">Jun. 2025 – Jul. 2026 | Manila, Philippines</p>
+            </div>
+          </div>
+          <ul class="experience-bullets">
+            <li>Improved instance capacity by <strong>71%</strong> (from 7k to 12k devices per instance) by migrating core event-driven architecture from Python to Go via AI-assisted spec generation, resolving system memory and resource leaks.</li>
+            <li>Managed and executed multi-instance scalability simulations up to <strong>100k concurrent devices</strong> on AWS ECS Fargate, verifying high-availability load scaling and device persistence under volatile stress testing.</li>
+            <li>Developed secure API Gateway for LiteLLM authorization and built an intelligent multi-agent system using <strong>CrewAI</strong> to automate real-time log discovery and troubleshooting workflows across production cloud environments.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Asurion — <span>Software Quality Assurance Intern</span></h3>
+              <p class="timeline-meta">May 2024 – Aug. 2024 | Taguig, Philippines (Hybrid)</p>
+            </div>
+          </div>
+          <ul class="experience-bullets">
+            <li>Developed and automated <strong>150+ robust E2E test cases</strong> using JavaScript, Selenium, and BDD methodologies, clearing 100% of the engineering product backlog for a core enterprise web platform.</li>
+            <li>Managed automated validation suites for complex, multi-stage transaction workflows, mapping verification points across authentication, CRUD actions, and database layer verification.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>DLSU Council of Student Organizations — <span>Team Lead Web Developer</span></h3>
+              <p class="timeline-meta">Dec. 2023 – Apr. 2025 | Manila, Philippines (Hybrid)</p>
+            </div>
+          </div>
+          <ul class="experience-bullets">
+            <li>Improved web application throughput and scaling capacities, maintaining 100% platform uptime during extreme registration traffic surges that peaked at <strong>45.71k unique site visits in a single day</strong>.</li>
+            <li>Managed a technical team of six web developers alongside organization heads to align application requirements, handle database management in MongoDB, and govern code quality.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="section-tag">CAPABILITIES</span>
+        <h2>Technical Skills & Tooling</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Languages</h4>
+          <p>Go 1.24, Python 3.12, JavaScript, TypeScript, PHP</p>
+        </div>
+        <div class="skill-category">
+          <h4>Cloud & Infrastructure</h4>
+          <p>AWS (ECS Fargate, Kinesis, SQS, S3, EventBridge, CloudWatch, CloudFormation, SAM, STS), Docker, Linux (WSL), Nginx</p>
+        </div>
+        <div class="skill-category">
+          <h4>Frameworks & Databases</h4>
+          <p>React.js, CrewAI, Contentful, MongoDB, MySQL, Chi Router</p>
+        </div>
+        <div class="skill-category">
+          <h4>Testing & CI/CD</h4>
+          <p>Git, GitHub Actions CI/CD, JIRA, Selenium, Gherkin, Cucumber, Makefile Automation</p>
+        </div>
+        <div class="skill-category" style="grid-column: span 2;">
+          <h4>AI-Assisted Engineering</h4>
+          <p>Anthropic Claude, Amazon Kiro, Agentic Workflows, Spec-Driven Development</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="section-header">
+        <span class="section-tag">BACKGROUND</span>
+        <h2>Education & Achievements</h2>
+      </div>
+
+      <div class="education-card">
+        <h3>De La Salle University</h3>
+        <p class="edu-sub">B.S. Computer Engineering | Feb. 2025 | Manila, Philippines</p>
+        <p class="edu-gpa">GPA: <strong>3.24 / 4.0</strong> — <em>Honorable Mention</em></p>
+        <p class="edu-org"><strong>Vice President for Academics</strong> — Association of Computer Engineering Students (ACES - DLSU) | Jul 2022 – Jun 2023 (Led ACCESS Hackathon 2023 & NVIDIA Workshops)</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 2026 John Louise G. Bungay. Built with HTML, CSS & GitHub Actions.</p>
+      <div class="footer-links">
+        <a href="mailto:bungay.jlg@gmail.com">bungay.jlg@gmail.com</a> | 
+        <a href="https://github.com/Jeyell26" target="_blank" rel="noopener">github.com/Jeyell26</a> | 
+        <a href="https://www.linkedin.com/in/jeyellbungay/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
