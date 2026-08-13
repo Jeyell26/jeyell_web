@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Louise Bungay — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .resume-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary-light);
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+    }
+    .profile-info h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 0.3rem;
+    }
+    .profile-title {
+      color: var(--accent-blue);
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+    .profile-contact {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .profile-contact a {
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    .profile-contact a:hover {
+      color: var(--accent-blue);
+    }
+    .nav-back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: var(--accent-blue);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-family: var(--font-mono);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Header Top Bar -->
+  <header class="top-bar">
+    <div class="top-bar-container">
+      <a href="index.html" class="brand">John Louise Bungay</a>
+      
+      <div class="nav-links">
+        <a href="index.html" class="btn-frame">← Portfolio Showcase</a>
+        <a href="https://github.com/Jeyell26" target="_blank" rel="noopener" class="btn-github">GitHub Profile ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="resume-page">
+    <a href="index.html" class="nav-back">← Back to Portfolio Showcase</a>
+
+    <!-- Profile Header with Photo -->
+    <div class="profile-header">
+      <img src="jl.jpg" alt="John Louise Bungay" class="profile-img" onerror="this.style.display='none'" />
+      <div class="profile-info">
+        <h1>John Louise G. Bungay</h1>
+        <div class="profile-title">Software Engineer (IoT, Cloud & AI Systems)</div>
+        <div class="profile-contact">
+          <span>Manila City, Philippines</span>
+          <span>+63 995 917 0261</span>
+          <a href="mailto:bungay.jlg@gmail.com">bungay.jlg@gmail.com</a>
+          <a href="https://www.linkedin.com/in/jeyellbungay/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Jeyell26" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Summary -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Professional Summary</h2>
+      </div>
+      <p class="card-text" style="font-size: 1rem; line-height: 1.7;">
+        Computer Engineering graduate from De La Salle University (GPA 3.24 / 4.0, Honorable Mention) with experience building high-concurrency backend services, automating cloud infrastructure on AWS, and scaling web applications under high-traffic conditions. Demonstrated history of optimizing system throughput, implementing secure cross-account identity management, and engineering automated testing pipelines.
+      </p>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="projects-grid" style="grid-template-columns: 1fr; gap: 1.5rem;">
+        
+        <div class="project-card">
+          <div class="card-top">
+            <h3 class="card-title">Sercomm — <span>Software Engineer (IoT Systems)</span></h3>
+            <span class="badge public">Jun. 2025 – Jul. 2026</span>
+          </div>
+          <p class="card-note" style="margin-bottom: 1rem; font-style: normal;">Manila, Philippines</p>
+          <ul style="padding-left: 1.2rem; color: var(--text-primary); font-size: 0.95rem; line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">Improved single-instance device capacity by <strong>71%</strong> (from 7,000 to 12,000 concurrent devices) by migrating core event-driven architecture from Python to Go via AI-assisted spec generation, resolving system memory and resource leaks.</li>
+            <li style="margin-bottom: 0.6rem;">Managed and executed multi-instance scalability simulations up to <strong>100,000 concurrent connected devices</strong> on AWS ECS Fargate, verifying high-availability load scaling and connection recovery under volatile stress testing.</li>
+            <li style="margin-bottom: 0.6rem;">Developed secure API Gateway for LiteLLM authorization and built an intelligent multi-agent system using <strong>CrewAI</strong> to automate real-time log discovery and troubleshooting workflows across production cloud environments.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="card-top">
+            <h3 class="card-title">Asurion — <span>Software Quality Assurance Intern</span></h3>
+            <span class="badge public">May 2024 – Aug. 2024</span>
+          </div>
+          <p class="card-note" style="margin-bottom: 1rem; font-style: normal;">Taguig, Philippines (Hybrid)</p>
+          <ul style="padding-left: 1.2rem; color: var(--text-primary); font-size: 0.95rem; line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">Developed and automated <strong>150+ robust E2E test cases</strong> using JavaScript, Selenium, and Cucumber (BDD), clearing 100% of the engineering product backlog for a core enterprise web platform.</li>
+            <li style="margin-bottom: 0.6rem;">Managed automated validation suites for complex, multi-stage transaction workflows, mapping verification points across authentication, CRUD actions, and database layer verification.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="card-top">
+            <h3 class="card-title">DLSU Council of Student Organizations — <span>Team Lead Web Developer</span></h3>
+            <span class="badge public">Dec. 2023 – Apr. 2025</span>
+          </div>
+          <p class="card-note" style="margin-bottom: 1rem; font-style: normal;">Manila, Philippines (Hybrid)</p>
+          <ul style="padding-left: 1.2rem; color: var(--text-primary); font-size: 0.95rem; line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">Improved web application throughput and scaling capacities, maintaining 100% platform uptime during extreme registration traffic surges that peaked at <strong>45,710 unique site visits in a single day</strong>.</li>
+            <li style="margin-bottom: 0.6rem;">Managed a technical team of six web developers alongside organization heads to align application requirements, handle database management in MongoDB, and govern code quality.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Key Projects</h2>
+      </div>
+
+      <div class="projects-grid" style="grid-template-columns: 1fr; gap: 1.5rem;">
+        <div class="project-card">
+          <div class="card-top">
+            <h3 class="card-title">LogPulse — Multi-Tenant AWS CloudWatch Log SaaS</h3>
+            <div>
+              <a href="https://jeyell26.github.io/CloudCompanion/" target="_blank" class="card-btn primary">Interactive Demo</a>
+              <a href="https://github.com/Jeyell26/CloudCompanion" target="_blank" class="card-btn secondary">GitHub Repo</a>
+            </div>
+          </div>
+          <p class="card-text">
+            Engineered an enterprise-grade log management application implementing <strong>Cross-Account IAM Role Assumption (<code>sts:AssumeRole</code>)</strong> with ExternalID validation and 1-hour auto-expiring temporary STS credentials. Built with Go 1.24, AWS SDK v2, React 19, and Python 3.12 SAM (`tiny`).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Education & Achievements</h2>
+      </div>
+      <div class="project-card">
+        <h3 class="card-title" style="margin-bottom: 0.3rem;">De La Salle University</h3>
+        <p class="card-text" style="margin-bottom: 0.5rem;">B.S. Computer Engineering | Feb. 2025 | Manila, Philippines</p>
+        <p class="card-text" style="color: var(--accent-blue); font-weight: 600; margin-bottom: 0.5rem;">GPA: 3.24 / 4.0 — Honorable Mention</p>
+        <p class="card-note" style="font-style: normal;">Vice President for Academics — Association of Computer Engineering Students (ACES - DLSU) | Jul. 2022 – Jun. 2023 (Led ACCESS Hackathon 2023 & NVIDIA Workshops)</p>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-matrix">
+        <div class="skill-box">
+          <h4>Languages</h4>
+          <p>Go 1.24, Python 3.12, JavaScript, TypeScript, PHP, SQL</p>
+        </div>
+        <div class="skill-box">
+          <h4>Cloud & Infrastructure</h4>
+          <p>AWS (ECS Fargate, STS, CloudWatch, Lambda, SQS, Kinesis, S3, CloudFormation, SAM), Docker, Linux, Nginx</p>
+        </div>
+        <div class="skill-box">
+          <h4>Frameworks & Databases</h4>
+          <p>React 19, Chi Router, Node.js, CrewAI, MongoDB, MySQL, Contentful</p>
+        </div>
+        <div class="skill-box">
+          <h4>DevOps & Testing</h4>
+          <p>Git, GitHub Actions CI/CD, JIRA, Selenium, Cucumber (BDD), Makefile Automation</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>John Louise Bungay — Resume</div>
+      <div class="footer-links">
+        <a href="index.html">Portfolio Showcase</a>
+        <a href="mailto:bungay.jlg@gmail.com">bungay.jlg@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

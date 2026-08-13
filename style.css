@@ -85,6 +85,12 @@ body {
   box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
 }
 
+.header-right-actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
 .btn-github {
   font-size: 0.85rem;
   font-family: var(--font-mono);
@@ -95,6 +101,16 @@ body {
   border-radius: 20px;
   text-decoration: none;
   transition: all 0.15s ease;
+}
+
+.btn-github.highlight-resume {
+  background: var(--primary-light);
+  color: #ffffff !important;
+  border-color: var(--primary-light);
+}
+
+.btn-github.highlight-resume:hover {
+  background: var(--primary-color);
 }
 
 .btn-github:hover {
